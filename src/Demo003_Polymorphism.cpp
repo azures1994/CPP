@@ -19,8 +19,18 @@ int test_001(){
     return 0;
 }
 
+int test_class_sizeof(){ 
+
+    std::cout << "alignof(BaseA): " << alignof(BaseA) << std::endl;
+    std::cout << "sizeof(BaseA): " << sizeof(BaseA) << std::endl;
+
+    return 0;
+}
+
 void start(){
     test_001();
+
+    test_class_sizeof();
 }
 
 } // namespace Demo003_Polymorphism

@@ -9,6 +9,10 @@ public:
     virtual void vFunc1(){
         printf("=== BaseA::vFunc1() ===\n");
     }
+private:
+    char _c;
+    int _i;
+    // double _d;
 };
 
 class DerivedA : public BaseA{
